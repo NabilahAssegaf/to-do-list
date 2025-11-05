@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <div class="input-row">
+            <input type="text" id="todo-input" placeholder="Tambah tugas baru..." aria-label="Tambah tugas">
+            <button id="add-todo">Tambah</button>
+        </div>
+
+        <div class="boards">
+            <div class="board">
+                <h2>To Do <span id="count-todo" class="count">0</span></h2>
+                <ul id="todo-list" class="list" data-status="todo"></ul>
+            </div>
+
+            <div class="board">
+                <h2>Selesai <span id="count-done" class="count">0</span></h2>
+                <ul id="done-list" class="list" data-status="done"></ul>
+            </div>
+        </div>
+
+        <p class="hint">Tarik tugas antar kolom untuk mengubah status. Klik ikon × untuk menghapus.</p>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
